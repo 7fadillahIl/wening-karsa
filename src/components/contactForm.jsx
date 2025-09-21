@@ -7,7 +7,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phone = "6285974733004";
+    const phone = "6285643611117";
     const text = `Halo, saya ${name} (${email}).%0A%0A${message}`;
     window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
   };
