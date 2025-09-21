@@ -5,6 +5,7 @@ import About from "./components/about";
 import Programs from "./components/programs";
 import Team from "./components/team";
 import Clients from "./components/clients";
+import Gallery from "./components/gallery";
 import Testimoni from "./components/testimoni";
 import ContactForm from "./components/contactForm";
 import Footer from "./components/footer";
@@ -28,6 +29,7 @@ export default function App() {
                 <Programs />
                 <Team />
                 <Clients />
+                <Gallery />
                 <Testimoni />
                 <ContactForm />
               </>

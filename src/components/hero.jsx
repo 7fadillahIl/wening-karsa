@@ -1,4 +1,4 @@
-import heroImage from "/assets/Logo.png"; // ganti dengan gambar ilustrasi/ilustrasi daun
+import heroImage from "/assets/Team/perusahaan 5.jpg";
 
 export default function Hero() {
   return (
@@ -32,11 +32,17 @@ export default function Hero() {
         </div>
 
         {/* Image / Illustration */}
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex justify-center relative">
+          {/* Background gradient/lingkaran */}
+          <div className="absolute inset-0 flex justify-center items-center">
+            <div className="w-[500px] h-[500px] bg-gradient-to-tr from-wk-olive/30 to-wk-green/20 rounded-full blur-3xl"></div>
+          </div>
+
+          {/* Foto */}
           <img
             src={heroImage}
-            alt="Ilustrasi pelatihan"
-            className="w-80 md:w-96 drop-shadow-lg rounded-xl"
+            alt="Foto pelatihan"
+            className="relative w-full max-w-[600px] rounded-2xl shadow-xl"
           />
         </div>
       </div>
