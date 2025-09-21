@@ -1,0 +1,13 @@
+/* semua @import harus paling atas */
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+/* baru Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS custom lainnya */
+html {
+  scroll-behavior: smooth;
+}
