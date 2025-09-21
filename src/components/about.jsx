@@ -1,8 +1,9 @@
 import logo from "/assets/Logo.png";
 import foto1 from "/assets/Team/perusahaan 1.jpg";
-import foto2 from "/assets/Team/perusahaan 2.jpg";
+import foto2 from "/assets/Team/perusahaan 9.jpg";
 import foto3 from "/assets/Team/perusahaan 3.jpg";
 import foto4 from "/assets/Team/perusahaan 4.jpg";
+import foto5 from "/assets/Team/perusahaan 14.jpg";
 
 export default function About() {
   return (
@@ -54,7 +55,7 @@ export default function About() {
               className="w-full h-32 object-cover rounded-lg shadow"
             />
             <img
-              src={foto2}
+              src={foto5}
               alt="Pelatihan 2"
               className="w-full h-32 object-cover rounded-lg shadow"
             />

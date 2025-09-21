@@ -16,32 +16,32 @@ export default function Gallery() {
         {/* Grid Foto */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           <img
-            src="/assets/Team/perusahaan 1.jpg"
+            src="/assets/Team/perusahaan 6.jpg"
             alt="Pelatihan"
             className="rounded-lg shadow-md object-cover h-48 w-full"
           />
           <img
-            src="/assets/Team/perusahaan 2.jpg"
+            src="/assets/Team/perusahaan 7.jpg"
             alt="Pelatihan"
             className="rounded-lg shadow-md object-cover h-48 w-full"
           />
           <img
-            src="/assets/Team/perusahaan 3.jpg"
+            src="/assets/Team/perusahaan 8.jpg"
             alt="Pelatihan"
             className="rounded-lg shadow-md object-cover h-48 w-full"
           />
           <img
-            src="/assets/Team/perusahaan 4.jpg"
+            src="/assets/Team/perusahaan 13.jpg"
             alt="Pelatihan"
             className="rounded-lg shadow-md object-cover h-48 w-full"
           />
           <img
-            src="/assets/Team/perusahaan 5.jpg"
+            src="/assets/Team/perusahaan 11.jpg"
             alt="Pelatihan"
             className="rounded-lg shadow-md object-cover h-48 w-full"
           />
           <img
-            src="/assets/Team/perusahaan 1.jpg"
+            src="/assets/Team/perusahaan 12.jpg"
             alt="Pelatihan"
             className="rounded-lg shadow-md object-cover h-48 w-full"
           />
