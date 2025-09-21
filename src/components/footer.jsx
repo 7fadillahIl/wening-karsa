@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "/assets/Logo.png";
+import logo from "/assets/Logo Putih.png";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
