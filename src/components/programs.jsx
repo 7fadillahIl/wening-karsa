@@ -1,5 +1,5 @@
 import ProgramCard from "./programCard";
-import PROGRAMS from "../data/PROGRAMS";
+import PROGRAMS from "../data/PROGRAM.js";
 
 export default function Programs() {
   return (
