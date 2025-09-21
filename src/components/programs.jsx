@@ -1,4 +1,4 @@
-import ProgramCard from "./ProgramCard";
+import ProgramCard from "./programCard";
 import PROGRAMS from "../data/PROGRAMS";
 
 export default function Programs() {
