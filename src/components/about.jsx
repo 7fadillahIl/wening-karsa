@@ -42,33 +42,69 @@ export default function About() {
             </p>
           </div>
 
-          {/* Foto Grid */}
+          {/* Foto Grid dengan Overlay */}
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src={logo}
-              alt="Wening Karsa"
-              className="col-span-2 w-full h-40 object-contain bg-wk-cream rounded-lg p-4 shadow"
-            />
-            <img
-              src={foto1}
-              alt="Pelatihan 1"
-              className="w-full h-32 object-cover rounded-lg shadow"
-            />
-            <img
-              src={foto5}
-              alt="Pelatihan 2"
-              className="w-full h-32 object-cover rounded-lg shadow"
-            />
-            <img
-              src={foto3}
-              alt="Pelatihan 3"
-              className="w-full h-32 object-cover rounded-lg shadow"
-            />
-            <img
-              src={foto4}
-              alt="Pelatihan 4"
-              className="w-full h-32 object-cover rounded-lg shadow"
-            />
+            {/* Logo */}
+            <div className="relative col-span-2">
+              <img
+                src={logo}
+                alt="Wening Karsa"
+                className="w-full h-40 object-contain bg-wk-cream rounded-lg p-4 shadow"
+              />
+              <div className="absolute inset-0 bg-black/50 text-white opacity-0 hover:opacity-100 flex items-center justify-center rounded-lg transition">
+                <p className="text-sm px-4 text-center">
+                  Logo resmi Wening Karsa – simbol ketenangan dan pertumbuhan.
+                </p>
+              </div>
+            </div>
+
+            {/* Foto 1 */}
+            <div className="relative">
+              <img
+                src={foto1}
+                alt="Pelatihan 1"
+                className="w-full h-32 object-cover rounded-lg shadow"
+              />
+              <div className="absolute inset-0 bg-black/60 text-white opacity-0 hover:opacity-100 flex items-center justify-center rounded-lg transition p-2 text-xs text-center">
+                Sesi kelas interaktif dengan peserta pelatihan.
+              </div>
+            </div>
+
+            {/* Foto 5 */}
+            <div className="relative">
+              <img
+                src={foto5}
+                alt="Pelatihan 2"
+                className="w-full h-32 object-cover rounded-lg shadow"
+              />
+              <div className="absolute inset-0 bg-black/60 text-white opacity-0 hover:opacity-100 flex items-center justify-center rounded-lg transition p-2 text-xs text-center">
+                Aktivitas kelompok yang membangun kerjasama tim.
+              </div>
+            </div>
+
+            {/* Foto 3 */}
+            <div className="relative">
+              <img
+                src={foto3}
+                alt="Pelatihan 3"
+                className="w-full h-32 object-cover rounded-lg shadow"
+              />
+              <div className="absolute inset-0 bg-black/60 text-white opacity-0 hover:opacity-100 flex items-center justify-center rounded-lg transition p-2 text-xs text-center">
+                Trainer menyampaikan materi dengan metode presentasi modern.
+              </div>
+            </div>
+
+            {/* Foto 4 */}
+            <div className="relative">
+              <img
+                src={foto4}
+                alt="Pelatihan 4"
+                className="w-full h-32 object-cover rounded-lg shadow"
+              />
+              <div className="absolute inset-0 bg-black/60 text-white opacity-0 hover:opacity-100 flex items-center justify-center rounded-lg transition p-2 text-xs text-center">
+                Peserta fokus dalam suasana pelatihan profesional.
+              </div>
+            </div>
           </div>
         </div>
 
@@ -147,12 +183,17 @@ export default function About() {
               karakter, memperluas wawasan, dan menumbuhkan kebijaksanaan.
             </p>
           </div>
-          <div className="flex justify-center">
+          {/* Foto dengan overlay */}
+          <div className="relative flex justify-center">
             <img
               src={foto2}
               alt="Pelatihan Semangat Belajar"
               className="w-full md:w-96 h-64 object-cover rounded-xl shadow"
             />
+            <div className="absolute inset-0 bg-black/60 text-white opacity-0 hover:opacity-100 flex items-center justify-center rounded-xl transition p-4 text-sm text-center">
+              Dokumentasi suasana pelatihan: peserta berdiskusi aktif untuk
+              memperkuat pemahaman dan kolaborasi.
+            </div>
           </div>
         </div>
 
@@ -177,12 +218,17 @@ export default function About() {
               </li>
             </ul>
           </div>
-          <div className="flex justify-center">
+          {/* Logo dengan overlay */}
+          <div className="relative flex justify-center">
             <img
               src={logo}
               alt="Visual Filosofi"
               className="w-72 object-contain drop-shadow-lg"
             />
+            <div className="absolute inset-0 bg-black/50 text-white opacity-0 hover:opacity-100 flex items-center justify-center rounded-xl transition p-4 text-sm text-center">
+              Visual filosofi Wening Karsa – menggambarkan harmoni antara
+              ketenangan dan tekad.
+            </div>
           </div>
         </div>
 

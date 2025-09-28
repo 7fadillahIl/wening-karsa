@@ -1,64 +1,28 @@
 export default function Clients() {
   const clients = [
     {
-      name: "Google",
-      colors: [
-        "#EA4335",
-        "#FBBC05",
-        "#34A853",
-        "#4285F4",
-        "#FBBC05",
-        "#EA4335",
-      ],
-    },
-    {
-      name: "Apple",
-      colors: ["#A2AAAD", "#A2AAAD", "#A2AAAD", "#A2AAAD", "#A2AAAD"],
-    },
-    { name: "Nike", colors: ["#111111", "#A2AAAD", "#111111", "#A2AAAD"] },
-    {
-      name: "Samsung",
+      name: "BPJS KESEHATAN",
       colors: [
         "#1428A0",
-        "#ADD8E6",
-        "#005A9C",
         "#1428A0",
-        "#ADD8E6",
-        "#005A9C",
         "#1428A0",
-      ],
-    },
-    {
-      name: "Honda",
-      colors: ["#ff0000", "#ff0000", "#ff0000", "#ff0000", "#ff0000"],
-    },
-    {
-      name: "Persib",
-      colors: [
         "#1428A0",
         "#34A853",
-        "#1428A0",
-        "#FFFF00",
         "#34A853",
-        "#1428A0",
-      ],
-    },
-    {
-      name: "Indomie",
-      colors: [
-        "#ff0000",
-        "#1428A0",
         "#34A853",
-        "#FFFF00",
         "#34A853",
-        "#1428A0",
-        "#ff0000",
+        "#34A853",
+        "#34A853",
+        "#34A853",
+        "#34A853",
+        "#34A853",
+        "#34A853",
       ],
     },
   ];
 
   // Duplicate array untuk looping seamless
-  const loopClients = [...clients, ...clients];
+  const loopClients = [...clients, ...clients, ...clients, ...clients];
 
   return (
     <section id="clients" className="py-16 bg-white overflow-hidden">
