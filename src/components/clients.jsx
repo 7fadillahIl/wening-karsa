@@ -1,7 +1,11 @@
+// Clients.jsx
+import bpjsLogo from "/assets/Our Clients/logo bpjs.png";
+
 export default function Clients() {
   const clients = [
     {
       name: "BPJS KESEHATAN",
+      logo: bpjsLogo,
       colors: [
         "#1428A0",
         "#1428A0",
@@ -22,7 +26,13 @@ export default function Clients() {
   ];
 
   // Duplicate array untuk looping seamless
-  const loopClients = [...clients, ...clients, ...clients, ...clients];
+  const loopClients = [
+    ...clients,
+    ...clients,
+    ...clients,
+    ...clients,
+    ...clients,
+  ];
 
   return (
     <section id="clients" className="py-16 bg-white overflow-hidden">
@@ -33,24 +43,35 @@ export default function Clients() {
 
         <div className="flex gap-12 sm:gap-24 whitespace-nowrap animate-slide">
           {loopClients.map((client, i) => (
-            <span
+            <div
               key={i}
-              className="inline-flex text-4xl sm:text-6xl font-extrabold cursor-pointer transition-transform duration-300 transform hover:scale-110"
+              className="inline-flex items-center gap-3 cursor-pointer transition-transform duration-300 transform hover:scale-110"
               onMouseEnter={(e) => {
-                const spans = e.currentTarget.querySelectorAll("span");
+                const spans = e.currentTarget.querySelectorAll(".char");
                 spans.forEach(
                   (s, idx) => (s.style.color = client.colors[idx] || "#000")
                 );
               }}
               onMouseLeave={(e) => {
-                const spans = e.currentTarget.querySelectorAll("span");
+                const spans = e.currentTarget.querySelectorAll(".char");
                 spans.forEach((s) => (s.style.color = "#000"));
               }}
             >
-              {client.name.split("").map((char, index) => (
-                <span key={index}>{char}</span>
-              ))}
-            </span>
+              {client.logo && (
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="h-10 sm:h-14 w-auto object-contain"
+                />
+              )}
+              <span className="text-2xl sm:text-3xl font-semibold text-black">
+                {client.name.split("").map((char, index) => (
+                  <span key={index} className="char">
+                    {char}
+                  </span>
+                ))}
+              </span>
+            </div>
           ))}
         </div>
       </div>
