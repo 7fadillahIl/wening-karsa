@@ -82,12 +82,14 @@ export default function Clients() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-100%);
           }
         }
+
         .animate-slide {
           display: inline-flex;
-          animation: slide 20s linear infinite;
+          min-width: max-content;
+          animation: slide 30s linear infinite;
         }
       `}</style>
     </section>
