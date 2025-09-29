@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import PROGRAMS from "../data/PROGRAM";
 
 export default function ProgramDetail() {
@@ -54,12 +54,12 @@ export default function ProgramDetail() {
         </div>
       )}
 
-      <a
-        href="/#programs"
+      <Link
+        to="/#programs"
         className="inline-block mt-6 text-wk-green font-semibold hover:underline"
       >
         ← Kembali ke Program
-      </a>
+      </Link>
     </div>
   );
 }

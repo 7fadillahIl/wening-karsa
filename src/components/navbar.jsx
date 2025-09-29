@@ -38,15 +38,6 @@ export default function Navbar() {
           Program
         </Link>
         <Link
-          to="team"
-          smooth
-          duration={500}
-          offset={-80}
-          className="cursor-pointer hover:underline"
-        >
-          Tim Kami
-        </Link>
-        <Link
           to="clients"
           smooth
           duration={500}
@@ -121,16 +112,6 @@ export default function Navbar() {
               className="text-lg cursor-pointer"
             >
               Program
-            </Link>
-            <Link
-              to="team"
-              smooth
-              duration={500}
-              offset={-80}
-              onClick={() => setOpen(false)}
-              className="text-lg cursor-pointer"
-            >
-              Tim Kami
             </Link>
             <Link
               to="clients"

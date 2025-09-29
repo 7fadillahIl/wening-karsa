@@ -1,7 +1,19 @@
+import { useEffect } from "react";
 import ProgramCard from "./programCard";
 import PROGRAMS from "../data/PROGRAM.js";
 
 export default function Programs() {
+  useEffect(() => {
+    const last = sessionStorage.getItem("lastProgram");
+    if (last) {
+      const el = document.getElementById(`program-${last}`);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      sessionStorage.removeItem("lastProgram"); // hapus biar gak ngulang
+    }
+  }, []);
+
   return (
     <section id="programs" className="py-16 bg-wk-cream">
       <div className="max-w-6xl mx-auto px-6">
